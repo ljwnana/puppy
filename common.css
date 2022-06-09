@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 초기화 */
+body, h1, h2, h3, p, ul { margin: 0; padding: 0; }
+ul li { list-style: none; }
+a { text-decoration: none; }
+hr { display: none; }
+.hidden { position: absolute; left: -9999px; }
+/* 웹폰트 */
+body {  width: 800px; margin: 8px auto;
+        font-family: 'Nanum Gothic', sans-serif;
+        max-width: 1300px; min-width: 800px; margin: 0 auto; 
+       /*max-width:최대크기 min-width:최소크기 */ }    
+/* 헤더 */
+#header { display: flex; 
+          flex-flow: row nowrap; 
+          justify-content: space-between;
+          align-items: center;
+          position: relative; height: 150px; background-color: #f46075; }
+#header h1 { width: 185px; }
+#header h1 a {  display: block; height: 150px; 
+                background: url(../images/logo.png) no-repeat;
+                text-indent: -9999px; }
+/* gnb
+#gnb { position: absolute; bottom: 45px; left: 297px;  }
+#gnb ul {}
+#gnb ul li { float: left; margin-right: 20px; } 
+#gnb ul li a { display: block; color: rgb(255, 255, 255); } */
+
+/*gnb*/
+#gnb { }
+#gnb ul { display: flex; margin-right: 107px; }
+#gnb ul li { margin-left: 30px; }
+#gnb ul li a { color: white; }
+
+/*본문*/
+main { width: 564px; float: left; }
+/*content*/
+#content h2 { line-height: 82px; margin-left:6px; }
+#content article { width: 272px; height: 242px; float: left;
+                   margin: 0 0 10px 10px; padding: 25px 12px 0;
+                   border: 1px solid #ccc; box-sizing: border-box; }
+#content article a { color: #333; }
+#content article a h3 { margin-bottom: 5px; font-size: 16px; }
+#content article a p { font-size: 14px; line-height: 18px; }
+
+#content .dogHouse:hover { background: lightpink; }
+#content .dogFood:hover { background-color: rgb(255, 249, 212); }
+#content .dogWater:hover { background-color: rgb(214, 242, 255); }
+#content .dogName:hover { background-color: rgb(227, 255, 225); }
+#content article a:hover { color: rgb(192, 190, 185); }
+
+/*puppyPhoto*/
+#puppyPhoto { width: 202px;
+              float: right; margin-top: 82px; padding: 10px;
+              border: 1px solid #006400; box-sizing: border-box;
+              background-color: #ffffff; }
+
+/*footer*/
+#footer { clear: both; padding: 20px 0; background-color: #333; color: white;
+          text-align: center; }
